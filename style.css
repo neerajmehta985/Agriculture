@@ -1,0 +1,368 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* General body styles */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f8f5;
+  }
+  
+  /* Header */
+  header {
+    background: #4CAF50;
+    padding: 10px 0;
+    color: white;
+  }
+  
+  nav.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .logo span {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url('./Images/Agriculture.png') no-repeat center center/cover;
+    height: 60vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+  }
+  
+  .hero-text h1 {
+    font-size: 3em;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .hero-text p {
+    font-size: 1.5em;
+    max-width: 700px;
+  }
+  
+  /* Subsidy Scheme Section */
+  .subsidy-scheme {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+  }
+  
+  .subsidy-scheme h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .grid-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+  }
+  
+  .grid-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .grid-item h3 {
+    margin-bottom: 10px;
+    color: #2e7d32;
+  }
+  
+  .grid-item p,
+  .grid-item ul {
+    font-size: 1em;
+  }
+  
+  .grid-item ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  /* Button */
+  .btn {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #388e3c;
+  }
+  
+  /* Farmer Support Section */
+  .farmer-support {
+    padding: 40px 20px;
+    background-color: #e0f7fa;
+  }
+  
+  .farmer-support h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #00796b;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .flex-item {
+    flex: 1 1 300px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+  }
+  
+  .flex-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .flex-item h3 {
+    margin-bottom: 10px;
+    color: #00695c;
+  }
+  
+  .flex-item p {
+    font-size: 1em;
+  }
+  
+  /* Contact Section */
+  .contact {
+    background-color: #f1f8e9;
+    padding: 40px 20px;
+  }
+  
+  .contact h2 {
+    text-align: center;
+    color: #33691e;
+    margin-bottom: 30px;
+    font-size: 2em;
+  }
+  
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact input,
+  .contact textarea {
+    margin-bottom: 15px;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border 0.3s ease;
+  }
+  
+  .contact input:focus,
+  .contact textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+  }
+  
+  .contact textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+  
+  .contact button {
+    padding: 12px 24px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact button:hover {
+    background-color: #388e3c;
+  }
+  
+  /* Footer */
+  footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+  }
+  
+  /* Responsive Section Padding */
+  section {
+    padding: 40px 20px;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .hero-text h1 {
+      font-size: 2.2em;
+    }
+  
+    .hero-text p {
+      font-size: 1.2em;
+    }
+  
+    .flex-container {
+      flex-direction: column;
+    }
+  
+    nav.navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      width: 100%;
+      padding-top: 10px;
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+    }
+  }
+  /* General reset and layout basics */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #2a7a3f;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.about, .mission, .vision, .team, .impact-cards {
+  padding: 2rem 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.impact-cards {
+  background-color: #f4f4f4;
+  border-top: 1px solid #ddd;
+}
+
+.impact-cards h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #2a7a3f;
+  color: white;
+  margin-top: 2rem;
+}
