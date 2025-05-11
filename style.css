@@ -1,308 +1,28 @@
 /* Reset default margin and padding */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* General body styles */
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f0f8f5;
-  }
-  
-  /* Header */
-  header {
-    background: #4CAF50;
-    padding: 10px 0;
-    color: white;
-  }
-  
-  nav.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 30px;
-  }
-  
-  .logo {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo img {
-    height: 40px;
-    margin-right: 10px;
-  }
-  
-  .logo span {
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-  }
-  
-  nav ul {
-    display: flex;
-    list-style: none;
-  }
-  
-  nav ul li {
-    margin: 0 15px;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-  }
-  
-  nav ul li a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Hero Section */
-  .hero {
-    background: url('./Images/Agriculture.png') no-repeat center center/cover;
-    height: 60vh;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0 20px;
-  }
-  
-  .hero-text h1 {
-    font-size: 3em;
-    margin-bottom: 15px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  }
-  
-  .hero-text p {
-    font-size: 1.5em;
-    max-width: 700px;
-  }
-  
-  /* Subsidy Scheme Section */
-  .subsidy-scheme {
-    background-color: #f9f9f9;
-    padding: 40px 20px;
-  }
-  
-  .subsidy-scheme h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    color: #333;
-  }
-  
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-  }
-  
-  .grid-item {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease;
-  }
-  
-  .grid-item:hover {
-    transform: translateY(-5px);
-  }
-  
-  .grid-item h3 {
-    margin-bottom: 10px;
-    color: #2e7d32;
-  }
-  
-  .grid-item p,
-  .grid-item ul {
-    font-size: 1em;
-  }
-  
-  .grid-item ul {
-    list-style-type: disc;
-    margin-left: 20px;
-  }
-  
-  /* Button */
-  .btn {
-    display: inline-block;
-    margin-top: 10px;
-    background-color: #4CAF50;
-    padding: 10px 20px;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .btn:hover {
-    background-color: #388e3c;
-  }
-  
-  /* Farmer Support Section */
-  .farmer-support {
-    padding: 40px 20px;
-    background-color: #e0f7fa;
-  }
-  
-  .farmer-support h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    color: #00796b;
-  }
-  
-  .flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
-  }
-  
-  .flex-item {
-    flex: 1 1 300px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease;
-  }
-  
-  .flex-item:hover {
-    transform: translateY(-5px);
-  }
-  
-  .flex-item h3 {
-    margin-bottom: 10px;
-    color: #00695c;
-  }
-  
-  .flex-item p {
-    font-size: 1em;
-  }
-  
-  /* Contact Section */
-  .contact {
-    background-color: #f1f8e9;
-    padding: 40px 20px;
-  }
-  
-  .contact h2 {
-    text-align: center;
-    color: #33691e;
-    margin-bottom: 30px;
-    font-size: 2em;
-  }
-  
-  .contact form {
-    display: flex;
-    flex-direction: column;
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
-  
-  .contact input,
-  .contact textarea {
-    margin-bottom: 15px;
-    padding: 12px 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1em;
-    transition: border 0.3s ease;
-  }
-  
-  .contact input:focus,
-  .contact textarea:focus {
-    border-color: #4CAF50;
-    outline: none;
-  }
-  
-  .contact textarea {
-    resize: vertical;
-    min-height: 120px;
-  }
-  
-  .contact button {
-    padding: 12px 24px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 1em;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .contact button:hover {
-    background-color: #388e3c;
-  }
-  
-  /* Footer */
-  footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
-  }
-  
-  /* Responsive Section Padding */
-  section {
-    padding: 40px 20px;
-  }
-  
-  /* Responsive Adjustments */
-  @media (max-width: 768px) {
-    .hero-text h1 {
-      font-size: 2.2em;
-    }
-  
-    .hero-text p {
-      font-size: 1.2em;
-    }
-  
-    .flex-container {
-      flex-direction: column;
-    }
-  
-    nav.navbar {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    nav ul {
-      flex-direction: column;
-      width: 100%;
-      padding-top: 10px;
-    }
-  
-    nav ul li {
-      margin: 10px 0;
-    }
-  }
-  /* General reset and layout basics */
-body {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  line-height: 1.6;
+  box-sizing: border-box;
 }
 
+/* Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f0f8f5;
+  color: #333;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url('https://media.istockphoto.com/id/1002484964/photo/harvested-wheat-fields-stubble-fields.jpg?s=612x612&w=0&k=20&c=2hFbsATj3V3TQ6oBaHE8X96Wdu2fUFmR2OV4n-hm8lI=');
+
+}
+
+/* Header & Navigation */
 header {
   background-color: #2a7a3f;
-  color: #fff;
   padding: 1rem 0;
+  color: white;
 }
 
 .navbar {
@@ -314,6 +34,17 @@ header {
   padding: 0 20px;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo span {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
 .navbar ul {
   list-style: none;
   display: flex;
@@ -321,48 +52,582 @@ header {
 }
 
 .navbar a {
-  color: #fff;
+  color: white;
   text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
 }
 
-.about, .mission, .vision, .team, .impact-cards {
-  padding: 2rem 20px;
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url('https://media.istockphoto.com/id/1002484964/photo/harvested-wheat-fields-stubble-fields.jpg?s=612x612&w=0&k=20&c=2hFbsATj3V3TQ6oBaHE8X96Wdu2fUFmR2OV4n-hm8lI=');
+  height: 60vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  width: 100vw;
+}
+
+.hero-text h1 {
+  font-size: 3em;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.hero-text p {
+  font-size: 1.5em;
+  max-width: 700px;
+}
+
+/* General Section Padding */
+section {
+  padding: 40px 20px;
   max-width: 1100px;
   margin: auto;
 }
 
+/* Subsidy Scheme Section */
+.subsidy-scheme {
+  background-color: #f9f9f9;
+}
+
+.subsidy-scheme h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2e7d32;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.grid-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.grid-item:hover {
+  transform: translateY(-5px);
+}
+
+.grid-item h3 {
+  margin-bottom: 10px;
+  color: #2e7d32;
+}
+
+.grid-item ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+/* Reusable Button */
+.btn {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: #388e3c;
+}
+
+/* Government Initiatives Section */
+.government-initiatives h2,
+.central-government-initiatives h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #00695c;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.flex-item {
+  flex: 1 1 300px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.flex-item:hover {
+  transform: translateY(-5px);
+}
+
+.flex-item h3 {
+  color: #00695c;
+  margin-bottom: 10px;
+}
+
+/* Central Government Initiatives - Card Layout */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card-content h3 {
+  margin-top: 15px;
+  color: #2e7d32;
+}
+
+.card-content p {
+  color: #666;
+}
+
+/* Footer */
+footer {
+  background-color: #2a7a3f;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    width: 100%;
+    padding-top: 10px;
+  }
+
+  .navbar li {
+    margin: 10px 0;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5em;
+  }
+
+  .hero-text p {
+    font-size: 1.2em;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .flex-container {
+    flex-direction: column;
+  }
+}
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f0f8f5;
+  color: #333;
+}
+
+/* Header & Navigation */
+header {
+  background-color: #2a7a3f;
+  padding: 1rem 0;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo span {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* About Section */
+.about {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #2e7d32;
+}
+
+.about p {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.8;
+}
+
+/* Impact Cards Section */
 .impact-cards {
-  background-color: #f4f4f4;
-  border-top: 1px solid #ddd;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
 }
 
 .impact-cards h2 {
-  text-align: center;
-  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #2e7d32;
 }
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
 }
 
 .card {
-  background-color: white;
-  padding: 1.5rem;
+  background-color: #fff;
+  padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: transform 0.2s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
 .card:hover {
   transform: translateY(-5px);
 }
 
+.card h3 {
+  margin-bottom: 15px;
+  color: #2e7d32;
+}
+
+.card p {
+  color: #666;
+  font-size: 1rem;
+}
+
+/* Footer */
 footer {
-  text-align: center;
-  padding: 1rem;
   background-color: #2a7a3f;
   color: white;
+  text-align: center;
+  padding: 1rem 0;
   margin-top: 2rem;
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    width: 100%;
+    padding-top: 10px;
+  }
+
+  .navbar li {
+    margin: 10px 0;
+  }
+
+  .about h2 {
+    font-size: 2rem;
+  }
+
+  .about p {
+    font-size: 1rem;
+  }
+
+  .impact-cards h2 {
+    font-size: 2rem;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header & Navigation */
+header {
+  background-color: #2a7a3f;
+  padding: 1rem 0;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Section */
+.contact {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #2e7d32;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#contact-form input,
+#contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#contact-form textarea {
+  height: 150px;
+}
+
+.btn {
+  background-color: #2a7a3f;
+  color: white;
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #1f5e30;
+}
+
+#response-message {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #2e7d32;
+}
+
+/* Location Section */
+.location {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.location h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #2e7d32;
+}
+
+address {
+  font-style: normal;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Social Media Section */
+.social-media {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.social-media h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #2e7d32;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 15px;
+  font-size: 1.2rem;
+  color: #2a7a3f;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #1f5e30;
+}
+
+/* Google Map Embed Section */
+.map {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.map h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #2e7d32;
+}
+
+.map-container iframe {
+  border: 0;
+  width: 100%;
+  max-width: 1000px;
+  height: 450px;
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #2a7a3f;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    width: 100%;
+    padding-top: 10px;
+  }
+
+  .navbar li {
+    margin: 10px 0;
+  }
+
+  .contact h2 {
+    font-size: 2rem;
+  }
+
+  #contact-form {
+    width: 90%;
+  }
+
+  .location h2, .social-media h2, .map h2 {
+    font-size: 2rem;
+  }
+}
+
